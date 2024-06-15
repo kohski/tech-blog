@@ -1,9 +1,9 @@
 ---
-title: 'このブログについて'
+title: '本ブログで使っている技術スタック'
 tags: ["hugo", "cloudflare"] # python, aws, lambdaなどを記述
 # description: "" # 個別ページのタイトル下部に表示される
 slug: "about-this-blog"
-summary: "" # 
+summary: "Hugo + Cloudflare Pagesを用いて作成しています" # 
 cover:
     image: "<image path/url>" # 300 * 180を基準にしたい
     alt: "<alt text>" # alt text
@@ -38,7 +38,7 @@ UseHugoToc: false
 以下の基準で技術選定しました。
 
 - カスタマイズ性よりもリリースまでの速さを優先
-- 学習コストがかからないこと
+- 学習コストが小さいこと
 - 日々の投稿の手間が最小になること
 - 極力コストを抑えられること
 
