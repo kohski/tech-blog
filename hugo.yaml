@@ -19,7 +19,7 @@ params:
   keywords: [Blog, Tech, AWS, TypeScript, JavaScript, Python, Serverless]
   author: kohski
   # author: ["Me", "You"] # multiple authors
-  images: ["/logos/icon.svg"]
+  images: ["/logos/favicon-48.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
