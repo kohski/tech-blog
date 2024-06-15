@@ -4,7 +4,7 @@ date: 2024-06-12T22:20:18+09:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["first"]
-author: "Me"
+# author: "kohski"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
@@ -18,10 +18,10 @@ disableShare: false
 disableHLJS: false
 hideSummary: false
 searchHidden: true
-ShowReadingTime: true
+ShowReadingTime: false
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
-ShowWordCount: true
+ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
