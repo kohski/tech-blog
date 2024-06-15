@@ -1,9 +1,17 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-date: {{ .Date }}
 tags: ["untagged"] # python, aws, lambdaなどを記述
 description: ""
 slug: ""
+summary: ""
+cover:
+    image: "<image path/url>" # 300 * 180を基準にしたい
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+# ----------------
+date: {{ .Date }}
 author: "kohski"
 showToc: true
 TocOpen: false
@@ -22,10 +30,4 @@ ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-cover:
-    image: "<image path/url>" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
 ---

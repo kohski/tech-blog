@@ -5,6 +5,7 @@ date: 2024-06-12T22:20:04+09:00
 # aliases: ["/first"]
 slug: "firsts"
 tags: ["first"]
+summary: "summary is here"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
@@ -21,7 +22,7 @@ searchHidden: true
 ShowReadingTime: false
 ShowBreadCrumbs: true
 ShowPostNavLinks: false
-ShowWordCount: true
+ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
