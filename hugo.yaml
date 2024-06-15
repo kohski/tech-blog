@@ -64,6 +64,8 @@ params:
     buttons:
       - name: tech
         url: tech
+      - name: misc
+        url: misc
       - name: Tags
         url: tags
 
