@@ -1,5 +1,5 @@
 baseURL: "https://kohski.dev/"
-title: ExampleSite
+title: kohski's blog
 paginate: 5
 theme: PaperMod
 
@@ -14,12 +14,12 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  title: kohski's blog
+  description: "しがないアラサーエンジニアのブログ"
+  keywords: [Blog, Tech, AWS, TypeScript, JavaScript, Python, Serverless]
+  author: kohski
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/logos/icon.svg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -48,22 +48,24 @@ params:
     favicon32x32: "/logos/favicon-32.png"
 
   label:
-    text: "Home"
-    icon: /apple-touch-icon.png
+    text: "kohski's blog"
+    icon: "/logos/icon.svg"
     iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
+    enabled: true # needs to be explicitly set
+    title: kohski's blog
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    imageUrl: "/logos/me.png"
+    imageWidth: 200
+    imageHeight: 200
     imageTitle: my image
     buttons:
       - name: Posts
         url: posts
+      - name: Categories
+        url: categories
       - name: Tags
         url: tags
 
@@ -74,18 +76,12 @@ params:
 
   socialIcons:
     - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://x.com/kos_kim_8"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/kohski"
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
       SiteVerificationTag: "XYZabc"
 
   cover:
@@ -93,10 +89,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
