@@ -20,16 +20,16 @@ params:
   author: kohski
   # author: ["Me", "You"] # multiple authors
   images: ["/logos/favicon-48.png"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "2006/1/2"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -56,15 +56,14 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: kohski's blog
+    subtitle: "しがないアラフォーエンジニアのアウトプット練習場"
     imageUrl: "/logos/me.png"
     imageWidth: 200
     imageHeight: 200
     imageTitle: me
     buttons:
-      - name: Posts
-        url: posts
-      - name: Categories
-        url: categories
+      - name: tech
+        url: tech
       - name: Tags
         url: tags
 
@@ -106,9 +105,9 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: tech
+      name: tech
+      url: /tech/
       weight: 10
     - identifier: tags
       name: tags
