@@ -49,7 +49,7 @@ params:
 
   label:
     text: "kohski's blog"
-    icon: "/logos/icon.svg"
+    # icon: "/logos/icon.svg"
     iconHeight: 35
 
   # profile-mode
@@ -57,7 +57,7 @@ params:
     enabled: true # needs to be explicitly set
     title: kohski's blog
     subtitle: "しがないアラフォーエンジニアのアウトプット練習場"
-    imageUrl: "/logos/me.png"
+    imageUrl: "/logos/icon-zoom-out.svg"
     imageWidth: 200
     imageHeight: 200
     imageTitle: me
