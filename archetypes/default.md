@@ -1,9 +1,9 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 tags: ["untagged"] # python, aws, lambdaなどを記述
-description: ""
+# description: "" # 個別ページのタイトル下部に表示される
 slug: ""
-summary: ""
+summary: "" # 
 cover:
     image: "<image path/url>" # 300 * 180を基準にしたい
     alt: "<alt text>" # alt text
@@ -18,7 +18,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-canonicalURL: "https://canonical.url/to/page"
+# canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
