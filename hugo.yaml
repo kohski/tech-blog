@@ -66,7 +66,7 @@ params:
         url: tech
       - name: misc
         url: misc
-      - name: Tags
+      - name: tags
         url: tags
       - name: About
         url: about

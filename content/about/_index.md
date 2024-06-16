@@ -1,6 +1,6 @@
 ---
 title: '本ブログについて'
-tags: ["general"] # python, aws, lambdaなどを記述
+tags: [""] # python, aws, lambdaなどを記述
 slug: "init-blog"
 summary: "本ブログについて"
 cover:
