@@ -10,12 +10,12 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
+draft: false
 # ----------------
 date: {{ .Date }}
 author: "kohski"
 showToc: true
 TocOpen: false
-draft: false
 hidemeta: false
 comments: false
 # canonicalURL: "https://canonical.url/to/page"
