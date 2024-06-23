@@ -1,6 +1,6 @@
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-tags: ["untagged"] # python, aws, lambdaなどを記述
+tags: ["untagged"] # Lambda, API Gateway, AWS, Python
 # description: "" # 個別ページのタイトル下部に表示される
 slug: ""
 summary: "" # 
