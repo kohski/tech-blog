@@ -1,9 +1,9 @@
 ---
-title: '20240721 Priority'
+title: '準備期間'
 tags: ["untagged"] # Lambda, API Gateway, AWS, Python
 # description: "" # 個別ページのタイトル下部に表示される
 slug: "preparation"
-summary: "優先順位って難しい" # 
+summary: "今は雌伏の時なのである" # 
 cover:
     image: "<image path/url>" # 300 * 180を基準にしたい
     alt: "<alt text>" # alt text
