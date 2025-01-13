@@ -10,7 +10,7 @@ cover:
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-draft: false
+draft: true
 # ----------------
 date: 2024-07-22T22:00:43+09:00
 author: "kohski"
