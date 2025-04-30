@@ -5,11 +5,11 @@ tags: ["network", "book", "TCP/IP", "AWS"] # Lambda, API Gateway, AWS, Python
 slug: "network-entry-book"
 summary: "『図解入門TCP/IP 第2版』と『体験しながら学ぶ ネットワーク技術入門』を読んでネットワークの基礎から実践までを学んだ記録" # 
 cover:
-    image: "images/network-books-cover.jpg" # 書籍の表紙画像のパスを設定
-    alt: "ネットワーク入門書籍の表紙" # alt text
-    caption: "ネットワーク入門の2冊" # display caption under cover
+    image: "<image path/url>" # 300 * 180を基準にしたい
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: false # 画像を表示する
+    hidden: true # only hide on current single page
 draft: false
 # ----------------
 date: 2025-04-24T10:12:12+09:00
