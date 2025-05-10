@@ -1,5 +1,5 @@
 ---
-title: '『おうちで学べるデータベースのきほん』第2版を読んだ'
+title: '『おうちで学べるデータベースのきほん 第2版』を読んだ'
 tags: ["database", "rdb", "book review"] # タグを追加
 # description: "" # 個別ページのタイトル下部に表示される
 slug: "db-entry-from-home"
