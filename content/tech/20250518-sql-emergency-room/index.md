@@ -1,9 +1,9 @@
 ---
-title: ''
-tags: ["untagged"] # Lambda, API Gateway, AWS, Python
+title: '『SQL緊急救命室 ─⁠─非効率なコードを改善せよ！』を読んだ'
+tags: ["database", "rdb", "book review", "データベース設計"] # Lambda, API Gateway, AWS, Python
 # description: "" # 個別ページのタイトル下部に表示される
-slug: ""
-summary: "" # 
+slug: "sql-emergency-room"
+summary: "『SQL緊急救命室 ─⁠─非効率なコードを改善せよ！』を読んで、CASE文やウィンドウ関数といったモダンSQLに慣れることができた" # 
 cover:
     image: "<image path/url>" # 300 * 180を基準にしたい
     alt: "<alt text>" # alt text
