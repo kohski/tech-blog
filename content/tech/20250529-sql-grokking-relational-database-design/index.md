@@ -12,7 +12,7 @@ cover:
     hidden: true # only hide on current single page
 draft: false
 # ----------------
-date: 2024-05-29T13:17:06+09:00
+date: 2025-05-29T13:17:06+09:00
 author: "kohski"
 showToc: true
 TocOpen: false
