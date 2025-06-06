@@ -1,6 +1,6 @@
 ---
 title: 'Aurora Serverless V2(PostgreSQL)にローカルから接続してみる'
-tags: ["AWS", "Aurora", "PostgreSQL", "インフラ"]
+tags: ["AWS", "Aurora", "PostgreSQL", "インフラ", "サーバーレスエンジニアだけどAuroraに入門する"]
 # description: "" # 個別ページのタイトル下部に表示される
 slug: "prisma-migration-to-aurora"
 summary: "サーバーレスエンジニアだけど、そろそろVPCから逃げられない。まずはAurora Serverless V2への接続方法を試してみます。" # 

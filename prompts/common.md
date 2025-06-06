@@ -18,9 +18,6 @@
 
 ## NG例・注意点
 - 書籍やサービスへの否定的な意見は避ける
-- passwordやsecretなどの機微情報は伏字にする。
-- 各IDも伏字にする。その際は元のID体系が類推できる形にする
-    - 例: abcd1234.ap-northesat-1.rds.com -> xxxxxxxx.ap-northesat-1.rds.com
 
 ## 記事の内容によって、以下のルールを参照する
 - 書籍のレビューの場合 =>./prompts/book-review.md
