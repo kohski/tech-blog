@@ -82,7 +82,6 @@ AWS上でのサーバーレスの一つの側面として、VPC不要なサー�
 | タイプ | プロトコル | ポート範囲 | ソース | 説明 |
 |--------|------------|------------|--------|------|
 | PostgreSQL | TCP | 5432 | EC2用Security Group | Auroraへの接続用 |
-| カスタムTCP | TCP | 5432 | 10.0.0.0/16 | VPC内からの接続用 |
 
 ### EC2用Security Group
 
@@ -140,10 +139,11 @@ Private Subnet内のEC2からSession Managerを使用するために、以下の
   - 配置: private subnet
   - パブリックIP: 割り当てなし
   - 用途: Session Manager経由でのポートフォワーディング
+  - IAMロール: AmazonSSMManagedInstanceCoreのポリシーをアタッチする
 
-## Secret Managerからパスワードを取得
+## AWS Secrets Managerからパスワードを取得
 
-Secret Managerへ移動し、該当のシークレットを選択し、「シークレットの値を取得する」を押下
+Secrets Managerへ移動し、該当のシークレットを選択し、「シークレットの値を取得する」を押下
 ![secret](./images/infra-secret-1.png)
 
 
@@ -153,8 +153,8 @@ Secret Managerへ移動し、該当のシークレットを選択し、「シー
 
 ### ポートフォワーディングの設定
 
-```
-ssh -i ~/Downloads/kohski-indivisual.pem \
+```bash
+$ ssh -i ~/Downloads/kohski-indivisual.pem \
     -L 5432:<Auroraクラスターのライターエンドポイント>:5432 \
     ec2-user@<EC2のパブリックIP>
 ```
@@ -177,8 +177,8 @@ ssh -i ~/Downloads/kohski-indivisual.pem \
 
 ポートフォワーディングを設定した状態で、別のターミナルウィンドウを開き、以下のコマンドを実行します：
 
-```
-psql -h localhost -U postgres
+```bash
+$ psql -h localhost -U postgres
 ```
 
 注意点：
@@ -192,8 +192,8 @@ psql -h localhost -U postgres
 
 ### session-manager経由でポートフォワーディング設定する
 
-```
-aws ssm start-session --target i-093933295cbd1e239 \                                                           ✘ 255 05:46:24
+```bash
+$ aws ssm start-session --target i-093933295cbd1e239 \
   --document-name AWS-StartPortForwardingSessionToRemoteHost \
   --parameters '{"host":["database-20250605.cluster-c3g6ekuak3h1.ap-northeast-1.rds.amazonaws.com"],"portNumber":["5432"], "localPortNumber":["5432"]}'
 ```
@@ -212,7 +212,22 @@ psql -h localhost -U postgres
 ## セキュリティを考慮するとprivate EC2 + session manager
 
 しっかりIP制限をかけたとしても、EC2をpublic subnetに配置することは気が引けますね。
+また、キーペアの流出なども怖いです。
+
 個人的な開発用途を除いて、private EC2 + Session managerの方がセキュリティ上良いかなと思いました。
+
+# 最後に
+
+世は大AI時代ですが、アプリケーションよりもずっと硬直的なデータのマネジメントはまだまだ人の手が必要です。
+いったん繋いでみるということができるようになったので、今後の実務に活かしていきたいです。
+
+検証の過程で気になったので、以下も試してみようと思います。
+
+- IAM認証
+- Data API
+
+
+# 付録
 
 ## NAT GW vs VPC Endpoint
 
@@ -227,15 +242,7 @@ private subnetからインターネットへ出るにはNAT Gatewayを使用す�
 | NAT Gateway | 0.062 USD/時/個 | 0.062 USD/GB |
 | VPC Endpoint | 0.014 USD/時/個 | 0.01 USD/GB (最初の1PB) |
 
+※ いずれもap-northeast-1リージョン
+
 いずれも固定料金部分で、0.062 * 30 = 1.86 USD ≒ 300円
 開発用途なら、そんなに気にしないでいい料金感と感じました。
-
-# 最後に
-
-世は大AI時代ですが、アプリケーションよりもずっと硬直的なデータのマネジメントはまだまだ人の手が必要です。
-いったん繋いでみるということができるようになったので、今後の実務に活かしていきたいです。
-
-検証の過程で気になったので、以下も試してみようと思います。
-
-- IAM認証
-- Data API
