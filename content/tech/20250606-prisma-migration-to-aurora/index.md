@@ -154,7 +154,7 @@ Secrets Managerへ移動し、該当のシークレットを選択し、「シ�
 ### ポートフォワーディングの設定
 
 ```bash
-$ ssh -i ~/Downloads/kohski-indivisual.pem \
+$ ssh -i ~/path/to/public-key.pem \
     -L 5432:<Auroraクラスターのライターエンドポイント>:5432 \
     ec2-user@<EC2のパブリックIP>
 ```
@@ -193,9 +193,9 @@ $ psql -h localhost -U postgres
 ### session-manager経由でポートフォワーディング設定する
 
 ```bash
-$ aws ssm start-session --target i-093933295cbd1e239 \
+$ aws ssm start-session --target i-xxxxxxxxxxxxxxxxxxx \
   --document-name AWS-StartPortForwardingSessionToRemoteHost \
-  --parameters '{"host":["database-20250605.cluster-c3g6ekuak3h1.ap-northeast-1.rds.amazonaws.com"],"portNumber":["5432"], "localPortNumber":["5432"]}'
+  --parameters '{"host":["xxxxxxxxx.cluster-xxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com"],"portNumber":["5432"], "localPortNumber":["5432"]}'
 ```
 
 ### ローカルPCからデータベースへの接続
