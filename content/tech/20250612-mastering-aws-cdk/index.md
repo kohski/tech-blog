@@ -44,8 +44,8 @@ AI くんへの指示だしもイマイチだし、出してくるコードも�
 | ---------- | ----------------------------------------------------------------------------------------------- |
 | 書籍名     | マスタリング AWS CDK ~現場で実践可能なスキルを身につける~                                       |
 | 著者名     | 佐藤智樹                                                                                        |
-| 出版年     | 2019.3.6                                                                                        |
-| ISBN       | 978-4-297-10409-2                                                                               |
+| 出版年     |  2025年6月                                                                                       |
+| ISBN       |                                                                                |
 | 書籍ページ | https://techbookfest.org/product/wEWtvT8aRZgzAcVSnE7wS8?productVariantID=9cBbjAi8DX90QNErt4VJnT |
 | GitHub     | https://github.com/tomoki10/mastering-aws-cdk                                                   |
 
