@@ -1,6 +1,6 @@
 ---
 title: '『GitHub CI/CD実践ガイド』を読んで、'
-tags: ["untagged"] # Lambda, API Gateway, AWS, Python
+tags: ["書籍レビュー", "GitHub", "CI/CD"] # Lambda, API Gateway, AWS, Python
 # description: "" # 個別ページのタイトル下部に表示される
 slug: "github-cicd-guide-book"
 summary: "" # 
